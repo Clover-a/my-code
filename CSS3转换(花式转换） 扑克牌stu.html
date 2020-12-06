@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3转换(花式转换） 扑克牌</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 400px;
+            height: 613px;
+            margin: 0 auto;
+            position: relative;
+            top: 50px;
+        }
+
+        .main .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8,
+        .box9,
+        .box10,
+        .box11,
+        .box12,
+        .box13,
+        .box14,
+        .box15,
+        .box16,
+        .box17 {
+
+            width: 100%;
+            height: 100%;
+            transition: all 2s;
+            position: absolute;
+            transform-origin: 40% 70%;
+        }
+
+        .main .box1 {
+            background: url(images/1.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+
+        }
+
+        .main .box2 {
+            background: url(images/2.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box3 {
+            background-image: url(images/3.jpg);
+            background-size: 70%;
+            background-repeat: no-repeat;
+        }
+
+        .main .box4 {
+            background: url(images/4.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box5 {
+            background: url(images/5.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box6 {
+            background: url(images/6.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box7 {
+            background: url(images/7.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box8 {
+            background: url(images/8.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box9 {
+            background: url(images/9.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box10 {
+            background: url(images/10.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box11 {
+            background: url(images/11.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box12 {
+            background: url(images/12.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box13 {
+            background: url(images/13.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box14 {
+            background: url(images/pk1.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box15 {
+            background: url(images/pk2.png);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box16 {
+            background: url(images/j.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+        .main .box17 {
+            background: url(images/j2.jpg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+
+
+        .main:hover .box1 {
+            transform: rotate(-60deg);
+        }
+
+        .main:hover .box2 {
+            transform: rotate(-50deg);
+        }
+
+        .main:hover .box3 {
+            transform: rotate(-40deg);
+        }
+
+        .main:hover .box4 {
+            transform: rotate(-30deg);
+        }
+
+        .main:hover .box5 {
+            transform: rotate(-20deg);
+        }
+
+        .main:hover .box6 {
+            transform: rotate(-10deg);
+        }
+
+        .main:hover .box7 {}
+
+        .main:hover .box8 {
+            transform: rotate(10deg);
+        }
+
+        .main:hover .box9 {
+            transform: rotate(20deg);
+        }
+
+        .main:hover .box10 {
+            transform: rotate(30deg);
+        }
+
+        .main:hover .box11 {
+            transform: rotate(40deg);
+        }
+
+        .main:hover .box12 {
+            transform: rotate(50deg);
+        }
+
+        .main:hover .box13 {
+            transform: rotate(60deg);
+        }
+
+        .main:hover .box14 {
+            transform: rotate(70deg);
+        }
+
+        .main:hover .box15 {
+            transform: rotate(80deg);
+        }
+
+        .main:hover .box16 {
+            transform: rotate(90deg);
+        }
+
+        .main:hover .box17 {
+            transform: rotate(100deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+        <div class="box13"></div>
+        <div class="box14"></div>
+        <div class="box15"></div>
+        <div class="box16"></div>
+        <div class="box17"></div>
+    </div>
+</body>
+
+</html>
