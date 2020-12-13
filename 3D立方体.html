@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>3D立方体</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div.box {
+			/*父盒子样式*/
+			width: 300px;
+			height: 300px;
+			margin: 200px auto;
+			font-size: 100px;
+			text-align: center;
+			line-height: 300px;
+			position: relative;
+			transform-style: preserve-3d;
+			/*添加3D视角*/
+			transform: rotateX(30deg) rotateY(-30deg);
+			/*翻转前的参考视角*/
+		}
+
+		.box>div {
+			/*子盒子样式*/
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border: 1px solid #000;
+			/* background-color: lightyellow;子盒子参考颜色,六个盒子设置后可删除 */
+		}
+
+		/* .up{
+			background-color: rgba(255,0,0,0.3);
+			transform:rotateX(90deg) translateY(-125px);
+			transform-origin: top;
+		}		 */
+
+		.up {
+			transform: rotateX(88deg) rotateZ(135deg) rotateY(182deg) translateY(44px) translateZ(-224px) translateX(18px);
+			background-color: rgba(178, 124, 201, 0.3);
+		}
+
+		.backward {
+			transform: rotateX(137deg) rotateZ(159deg) rotateY(185deg) translateY(239px) translateZ(-619px) translateX(-230px);
+			background-color: rgba(203, 216, 131, 0.3);
+		}
+
+		.right {
+			transform: rotateX(175deg) rotateZ(179deg) rotateY(134deg) translateY(-70px) translateZ(-161px) translateX(-57px);
+			background-color: rgba(23, 255, 60, 0.3);
+		}
+
+		.forward {
+			transform: rotateX(137deg) rotateZ(159deg) rotateY(185deg) translateY(156px) translateZ(-834px) translateX(-212px);
+			background-color: rgba(221, 236, 134, 0.3);
+		}
+
+		.down {
+			transform: rotateX(88deg) rotateZ(135deg) rotateY(182deg) translateY(48px) translateZ(102px) translateX(4px);
+			background-color: rgba(0, 255, 0, 0.2);
+		}
+
+		.left {
+			transform: rotateX(175deg) rotateZ(179deg) rotateY(134deg) translateY(-86px) translateZ(128px) translateX(-99px);
+			background-color: rgba(233, 167, 91, 0.3);
+		}
+
+		/* .box:hover .down {
+			transform: rotateX(270deg) translateZ(200px);
+		} */
+
+
+		@keyframes rot {
+
+			0% {
+				-webkit-transform: rotate(0deg);
+			}
+
+			25% {
+				-webkit-transform: rotate(90deg);
+			}
+
+			50% {
+				-webkit-transform: rotate(180deg);
+			}
+
+			75% {
+				-webkit-transform: rotate(270deg);
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg);
+			}
+
+		}
+
+		.box1 {
+			animation: rot 2s linear infinite;
+		}
+		body{
+			overflow: hidden;
+		}
+		
+		
+
+		
+	</style>
+</head>
+
+<body>
+	<div class="box1">
+	<div class="box">
+		<div class="up">上</div>
+		<div class="down">下</div>
+		<div class="left">左</div>
+		<div class="right">右</div>
+		<div class="forward">前</div>
+		<div class="backward">后</div>
+	</div></div>
+</body>
+
+</html>
