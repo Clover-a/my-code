@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>星辰大海</title>
+    <style>
+        body {
+            overflow: hidden;
+            background: url(images/bg.jpg);
+            position: relative;
+        }
+
+        .box {
+            width: 509px;
+            height: 270px;
+            /* margin: 100px auto; */
+            background: url(images/shark1.png) left top;
+            animation: move 3s steps(8) infinite;
+            position: absolute;
+            left: -500px;
+        }
+
+        @keyframes move {
+            0% {}
+
+            100% {
+                background-position: left -2160px;
+                transform: translateX(2000px);
+            }
+        }
+
+        .box1 {
+            /* width: 174px;
+            height: 126px;
+            background: url(images/fish8.png) left top;
+            animation: move1 5s steps(8) infinite; */
+
+           
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            position: absolute;
+            animation: move1 5s linear infinite;
+            left:-100px;
+        }
+        .box1::after{
+            width: 174px;
+            height: 126px;
+            content: "";
+            position: absolute;
+            left: 10px;
+            top:10px;
+            background: url(images/fish8.png) left top;
+        }
+
+        @keyframes move1 {
+            0% {}
+
+            100% {
+                /* background-position: left -2160px; */
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+
+</html>
