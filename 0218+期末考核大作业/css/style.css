@@ -58,7 +58,7 @@
     padding: 20px;
     text-align: center;
     color: #fff;
-    border:1px dashed #eee;
+    border: 1px dashed #eee;
 }
 
 /* 小屏幕 */
@@ -70,10 +70,10 @@
     .text p {
         font-size: 14px;
     }
-    .tab2-text{
+    .tab2-text {
         float: left;
     }
-    .tab2-img{
+    .tab2-img {
         float: right;
     }
 }
@@ -99,8 +99,27 @@
         font-size: 18px;
     }
 }
-.box11{
+
+.box11 {
     height: 20px;
     width: 100%;
-    background-image:linear-gradient(45deg,red,yellow,red);
+    background-image: linear-gradient(45deg, red, yellow, red);
+}
+h1{
+    text-align: center;
+}
+h1 img {
+    position: absolute;
+    right: 30px;
+    top: 420px;
+    border-radius: 50%;
+    animation: rot1 3s linear infinite;
+    width: 4%;
+}
+
+@keyframes rot1 {
+    0% {}
+    100% {
+        transform: rotate(360deg);
+    }
 }
