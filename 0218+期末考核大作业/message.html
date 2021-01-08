@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base target="_blank">
+    <link rel="shortcut icon" href="images/cjlogo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>反馈</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand" style="padding: 0;"><img src="images/cjlogo.ico" alt="cj的网站" width="50px"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+
+                    <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+                    <li class="active"><a href="message.html"><span class="glyphicon glyphicon-user"></span> 反馈</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form  action="register.php" method="post" style="margin: 100px;">
+        <div class="form-group has-success has-feedback">
+            <label class="control-label">电子邮件</label>
+            <div>
+                <input type="email" class="form-control" placeholder="请输入您的电子邮件">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">密码</label>
+
+            <input type="password" class="form-control" placeholder="请输入您的密码">
+
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon">%</div>
+            <input type="number" class="form-control" placeholder="请问您学习党的思想的时间占比是多少呢">
+            <div class="input-group-addon">.00</div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">请问您对中国国产党了解得多吗？
+
+                <select class="form-control">
+                    <option>很了解</option>
+                    <option>一般</option>
+                    <option>不太了解</option>
+                </select>
+            </label>
+
+        </div>
+        <div class="form-group">
+            <label class="control-label">请问您比较了解哪些的历史事件呢？</label>
+            <label class="checkbox-inline">
+                <input type="checkbox">五四运动
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox">南昌起义
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox">遵义会议
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox">攻占总统府
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox">开国大典
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">请问中共一大的召开是在什么时候？
+
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1921年7月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1927年7月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1921年1月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1927年1月
+                </label>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">请问南昌起义打响武装反抗国民党反动派的第一枪是在什么时候？
+
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1921年7月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1927年7月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1921年8月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1927年8月
+                </label>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">请问遵义会议是在什么时候的？
+
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1935年1月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1935年7月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1921年1月
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="时间" value="时间">1927年1月
+                </label>
+            </label>
+        </div>
+        
+
+        <button class="btn submit" type="submit">提交</button>
+        <button class="btn btn-info"> <a href="index.html">回到首页</a></button>
+    </form>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

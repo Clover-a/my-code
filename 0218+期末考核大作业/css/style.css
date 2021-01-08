@@ -1,0 +1,106 @@
+@chartset"utf-8";
+.logo {
+    padding: 0;
+}
+
+#mycarousel {
+    margin: 50px 0 0 0;
+}
+
+#navbar-collapse ul {
+    margin-top: 0;
+}
+
+.carousel-inner img {
+    margin: 0 auto;
+}
+
+.carousel-inner .item {
+    height: 370px;
+}
+
+.carousel-control {
+    font-size: 100px;
+    line-height: 370px;
+}
+
+.tab2 {
+    background-color: #eee;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tab3 {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.text h3 {
+    font-size: 20px;
+}
+
+.text p {
+    font-size: 14px;
+}
+
+/* .tab2 img{
+    width: 40%;
+    height: 40%;
+}
+.tab3 img{
+    width: 65%;
+    height: 65%;
+} */
+
+#footer {
+    background-color: #2a2a2a;
+    border-top: 1px solid #2a2a2a;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border:1px dashed #eee;
+}
+
+/* 小屏幕 */
+
+@media(min-width:768px) {
+    .text h3 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .tab2-text{
+        float: left;
+    }
+    .tab2-img{
+        float: right;
+    }
+}
+
+/* 中屏幕 */
+
+@media(min-width:992px) {
+    .text h3 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+}
+
+/* 大屏幕 */
+
+@media(min-width:1200px) {
+    .text h3 {
+        font-size: 26px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+}
+.box11{
+    height: 20px;
+    width: 100%;
+    background-image:linear-gradient(45deg,red,yellow,red);
+}
